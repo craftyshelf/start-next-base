@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# start-next-base
 
-## Getting Started
+A baseline Next.js 14 project with Docker, ESLint, TailwindCSS, Prettier, pnpm for build, TypeScript, and Husky with pre-commit hook.
 
-First, run the development server:
+### Naming Conventions
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**File Naming**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Components: Use PascalCase (e.g., IndustryList.tsx, IndustryDetails.tsx). This convention helps distinguish components from other types of files.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Hooks: Use camelCase (e.g., useIndustries.ts, useIndustry.ts).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Utility Files: Use camelCase (e.g., apiClient.ts, reactQuery.ts).
 
-## Learn More
+Page Files: Use lowercase with dashes (e.g., page.tsx for the root page, [id]/page.tsx for dynamic routes).
 
-To learn more about Next.js, take a look at the following resources:
+Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+PascalCase: For React components, which makes it clear they are components.
+camelCase: For hooks and utility functions, which follow JavaScript/TypeScript naming conventions for functions.
+lowercase-with-dashes: For page files, which helps differentiate between route files and other files.

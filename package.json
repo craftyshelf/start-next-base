@@ -5,20 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3000",
     "lint": "next lint",
-    "prepare": "node .husky/install.mjs || exit 0"
+    "lint:fix": "next lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "prepare": "node .husky/install.mjs || exit 0",
+    "preinstall": "npx only-allow pnpm"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ],
-
     "*.{css,scss}": [
       "prettier --write"
     ]
-},
+  },
   "dependencies": {
     "next": "14.2.4",
     "react": "^18",

@@ -9,10 +9,7 @@
   "rules": {
     "prettier/prettier": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      { "argsIgnorePattern": "^_" }
-    ],
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/enforces-shorthand": "warn",
     "tailwindcss/no-custom-classname": "off"
@@ -23,4 +20,3 @@
     }
   }
 }
-
