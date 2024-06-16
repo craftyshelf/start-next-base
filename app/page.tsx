@@ -1,4 +1,4 @@
-import { LeafIcon } from '@/components/ui/brand/LeafIcon';
+import { LeafIcon } from '@/components/brand/LeafIcon';
 
 export default function Home() {
   return (
